@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Metropolis", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom palette according to Design Philosophy & Brand guidelines */
+  --color-primary: #00333c;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #004b57;
+  --color-on-primary-container: #81bac8;
+  
+  --color-secondary: #0044cd;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #1059ff;
+  
+  --color-tertiary: #003338;
+  --color-on-tertiary: #ffffff;
+  
+  --color-deep-teal-900: #002D35;
+  --color-surface-subtle: #F7F8FA;
+  --color-border-low: #E1E3E8;
+  --color-background: #f9f9fc;
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #40484a;
+  
+  --spacing-container-max: 1280px;
+}
+
+/* Custom blueprint grid */
+.blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(225, 227, 232, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225, 227, 232, 0.4) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: center top;
+}
+
+/* Base custom interactive states */
+.active-nav-border {
+  position: relative;
+}
+.active-nav-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-secondary);
+}
+
+/* For beautiful custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "스튜디오 프리시전",
+  "description": "기술적 정밀함과 창의적 전문성을 담은 하이엔드 디지털 디자인 에이전시, 스튜디오 프리시전의 공식 포트폴리오 및 아키텍처럴 디자인 쇼케이스 애플리케이션입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
